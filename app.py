@@ -24,10 +24,9 @@ st.sidebar.image("poster.png")
 
 #api keys
 
-TAVILY_API_KEY = "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"
-api = "AQ.Ab8RN6KEh7Qk8EQedAwA2I8qDXQV_Ocqn6B1JWz9Hivj0HsmzQ"
-gapi = "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"
-
+TAVILY_API_KEY = st.sidebar.text_input("Tavily-API", type = "password")
+api = st.sidebar.text_input("Gemini-API", type = "password")
+gapi = st.sidebar.text_input("Tavily-API", type = "password")
 #model creation
 
 model = ChatGoogleGenerativeAI(
