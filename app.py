@@ -30,10 +30,10 @@ gapi = st.sidebar.text_input("Groq-API", type = "password")
 
 all_API = [TAVILY_API_KEY, api ,gapi]
 
-if not all(all_api):
+if not all(all_API):
     st.error("Must give API kets")
     st.stop()
-elif all(all_api):
+elif all(all_API):
     st.success("API keys Loaded Successfully")
 else: 
     st.info("Pass all API-Keys")
