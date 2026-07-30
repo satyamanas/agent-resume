@@ -49,6 +49,9 @@ profile_op = ["Data Analysts", "AI Engineer","Gen AI Developer", "Full-Stack Dev
 profile = st.sidebar.multiselect("Select Job Profile",
                                  options = profile_op)
 
+#GET USER INFO
+st.markdown("""###Get user info###""")
+user_info = st.text_area("""Write your resume Description: """)
 
 
 
