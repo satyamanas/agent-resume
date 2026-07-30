@@ -26,7 +26,7 @@ st.sidebar.image("poster.png")
 
 TAVILY_API_KEY = st.sidebar.text_input("Tavily-API", type = "password")
 api = st.sidebar.text_input("Gemini-API", type = "password")
-gapi = st.sidebar.text_input("Tavily-API", type = "password")
+gapi = st.sidebar.text_input("Groq-API", type = "password")
 #model creation
 
 model = ChatGoogleGenerativeAI(
