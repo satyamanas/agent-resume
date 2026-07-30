@@ -90,9 +90,9 @@ def main_agent(agent, query):
 
 #display jons
 
-code = main_agent(agent, "Manas Satya, GEN AI EXPERT")
-from IPython import display as DISPLAY 
-DISPLAY.HTML(code)
+# code = main_agent(agent, "Manas Satya, GEN AI EXPERT")
+# from IPython import display as DISPLAY 
+# DISPLAY.HTML(code)
 
 #fetch jobs related to cv
 
@@ -121,5 +121,5 @@ def get_jobs(agent,
 
 #display jobs 
 
-code = get_jobs(agent)
-DISPLAY.HTML(code)
+#code = get_jobs(agent)
+#DISPLAY.HTML(code)
