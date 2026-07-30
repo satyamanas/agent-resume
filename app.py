@@ -36,7 +36,7 @@ if not all(all_api):
 elif all(all_api):
     st.success("API keys Loaded Successfully")
 else: 
-    st.info("Pass all API-Keys)
+    st.info("Pass all API-Keys")
             
 #model creation
 
