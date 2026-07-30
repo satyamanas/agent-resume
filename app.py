@@ -27,6 +27,17 @@ st.sidebar.image("poster.png")
 TAVILY_API_KEY = st.sidebar.text_input("Tavily-API", type = "password")
 api = st.sidebar.text_input("Gemini-API", type = "password")
 gapi = st.sidebar.text_input("Groq-API", type = "password")
+
+all_API = [TAVILY_API_KEY, api ,gapi]
+
+if not all(all_api):
+    st.error("Must give API kets")
+    st.stop()
+elif all(all_api):
+    st.success("API keys Loaded Successfully")
+else: 
+    st.info("Pass all API-Keys)
+            
 #model creation
 
 model = ChatGoogleGenerativeAI(
