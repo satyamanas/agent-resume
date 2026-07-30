@@ -26,8 +26,9 @@ model = ChatGoogleGenerativeAI(
 model = 'gemini-3.5-flash-lite',
 google_api_key = api
 )
-response = model.invoke("Hello Buddy!")
-response. content [-1] ['text' ]
+
+#response = model.invoke("Hello Buddy!")
+#response. content [-1] ['text' ]
 
 #search latest news jobs
 
