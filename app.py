@@ -53,7 +53,7 @@ agent = create_agent(
     tools = [search_latest_news_jobs]
 )
 
-agent
+ # agent
 
 #prompt to generate cv 
 
