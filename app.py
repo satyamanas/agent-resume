@@ -17,10 +17,10 @@ st.set_page_config(layout="wide")
 st.title("AI RESUME GENERATOR")
 st.write("""This app helps user to build customized Professional Resume with latest Job apply links""")
 
-st.image("poster.png")
+st.image("https://raw.githubusercontent.com/satyamanas/agent-resume/refs/heads/main/poster.png")
 
 st.sidebar.title("Fill Important Details")
-st.sidebar.image("poster.png")
+st.sidebar.image("https://raw.githubusercontent.com/satyamanas/agent-resume/refs/heads/main/poster.png")
 
 #api keys
 
@@ -34,7 +34,10 @@ if not all(all_API):
     st.error("Must give API keys")
     st.stop()
 elif all(all_API):
-    st.success("API keys Loaded Successfully")
+    model = ChatGoogleGenerativeAI(
+    model = 'gemini-3.5-flash-lite',
+    google_api_key = api
+    )
 else: 
     st.info("Pass all API-Keys")
 
@@ -57,10 +60,7 @@ user_info = st.text_area("""Write your resume Description: """)
 
 #model creation
 
-model = ChatGoogleGenerativeAI(
-model = 'gemini-3.5-flash-lite',
-google_api_key = api
-)
+
 
 #response = model.invoke("Hello Buddy!")
 #response. content [-1] ['text' ]
